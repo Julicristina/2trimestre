@@ -10,11 +10,11 @@ const perguntas = [
         enunciado: "Você é abordado por um estranho que menciona um ingrediente lendário. Como você reage?",
         alternativas: [
             {
-             texto: "Aceitar o desafio e seguir o estranho",
+             texto: "Aceitar o desafio e seguir o estranho. Você decide seguir o estranho e se aventurar em busca do ingrediente lendário.",
                 afirmacao: " Você decide seguir o estranho e se aventurar em busca do ingrediente lendário. "
             },
             {
-                texto: "Ignorar e continuar com seus afazeres:",
+                texto: "Ignorar e continuar com seus afazeres. Você decide não se envolver e seguir seu caminho normalmente.",
                 afirmacao: "Você decide não se envolver e seguir seu caminho normalmente."
             }
         ]
@@ -23,11 +23,11 @@ const perguntas = [
         enunciado: "Se escolheu Aceitar o desafio e seguir o estranho: Você encontra uma bifurcação no caminho. Qual direção você escolhe?",
         alternativas: [
             {
-                texto: "Seguir o caminho iluminado e seguro:",
+                texto: "Seguir o caminho iluminado e seguro: Opta por um caminho aparentemente mais seguro e bem-trilhado.",
                 afirmacao: "Opta por um caminho aparentemente mais seguro e bem-trilhado."
             },
             {
-                texto: "Atravessar o caminho sombrio e misterioso: ",
+                texto: "Atravessar o caminho sombrio e misterioso: Opta por um caminho desafiador e menos conhecido.",
                 afirmacao: "Opta por um caminho desafiador e menos conhecido."
             }
         ]
@@ -36,11 +36,11 @@ const perguntas = [
         enunciado: "Se escolheu Seguir o caminho iluminado e seguro: Você se depara com um guardião misterioso. Como você procede?",
         alternativas: [
             {
-                texto: "Tentar negociar pacificamente: ",
-                afirmacao: "Você tenta convencer o guardião a deixá-lo passar sem conflitos.
+                texto: "Tentar negociar pacificamente: Você tenta convencer o guardião a deixá-lo passar sem conflitos.",
+                afirmacao: "Você tenta convencer o guardião a deixá-lo passar sem conflitos."
             },
             {
-                texto: "Desafiar o guardião para um duelo: ",
+                texto: "Desafiar o guardião para um duelo: Você decide enfrentar o guardião em um confronto direto para continuar seu caminho ",
                 afirmacao: "Você decide enfrentar o guardião em um confronto direto para continuar seu caminho."
             }
         ]
@@ -49,11 +49,11 @@ const perguntas = [
         enunciado: "Se escolheu Atravessar o caminho sombrio e misterioso: Você se depara com um enigma antigo. Como você resolve o enigma?",
         alternativas: [
             {
-                texto: "Usar seu conhecimento sobre ingredientes raros: .",
+                texto: "Usar seu conhecimento sobre ingredientes raros: Você usa seu conhecimento culinário para decifrar o enigma relacionado a ingredientes..",
                 afirmacao: "Você usa seu conhecimento culinário para decifrar o enigma relacionado a ingredientes."
             },
             {
-                texto: "Pedir ajuda ao estranho que mencionou o ingrediente lendário:",
+                texto: "Pedir ajuda ao estranho que mencionou o ingrediente lendário: Você decide procurar o estranho por ajuda para resolver o enigma.",
                 afirmacao: "Você decide procurar o estranho por ajuda para resolver o enigma."
             }
         ]
@@ -62,11 +62,11 @@ const perguntas = [
         enunciado: "Sobre o Enigma",
         alternativas: [
             {
-                texto: "Se escolheu Usar seu conhecimento sobre ingredientes raros: ",
+                texto: "Se escolheu Usar seu conhecimento sobre ingredientes raros: Você decifra o enigma e encontra uma pista crucial sobre a localização do ingrediente lendário.",
                 afirmacao: "Você decifra o enigma e encontra uma pista crucial sobre a localização do ingrediente lendário."
             },
             {
-                texto: "Se escolheu Pedir ajuda ao estranho que mencionou o ingrediente lendário: ",
+                texto: "Se escolheu Pedir ajuda ao estranho que mencionou o ingrediente lendário: O estranho revela informações valiosas que o ajudam a desvendar o mistério do ingrediente lendário, mas não ajuda em muita coisa",
                 afirmacao: "O estranho revela informações valiosas que o ajudam a desvendar o mistério do ingrediente lendário, mas não ajuda em muita coisa"
             }
         ]
@@ -76,11 +76,11 @@ const perguntas = [
         enunciado: "Sobre o Guardião:",
         alternativas: [
             {
-                texto: "Se você resolveu negociar pacificamente com o Guardião.,
+                texto: "Se você resolveu negociar pacificamente com o Guardião. Ele decide te dar o ingrediente lendário, que para você, um cozinheiro, não tem preço.",
                 afirmacao: "Ele decide te dar o ingrediente lendário, que para você, um cozinheiro, não tem preço."
             },
             {
-                texto: "Se você escolheu enfrenta-lo em um duelo.",
+                texto: "Se você escolheu enfrenta-lo em um duelo. Você morreu. Esperava o que? Tu é um cozinheiro não um guerreiro mermão.",
                 afirmacao: "Você morreu. Esperava o que? Tu é um cozinheiro não um guerreiro mermão. "
             }
         ]
@@ -120,7 +120,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Resumin...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
